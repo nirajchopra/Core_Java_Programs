@@ -13,8 +13,8 @@ public class TestShape {
 
 		s[2] = Shape.getShape(3);
 
-		Rectangle r = (Rectangle) s[0];
-		r.setLength(50);
+//		Rectangle r = (Rectangle) s[0];
+//		r.setLength(50);
 
 		for (int i = 0; i < s.length; i++) {
 

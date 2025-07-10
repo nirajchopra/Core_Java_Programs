@@ -5,13 +5,13 @@ public class TestAccount {
         Account account = new Account();
         
         // Set account details
-        account.setAccountNumber("1234567890");
+        account.setAccountNumber("8305443480");
         account.setAccountType("Savings");
-        account.setBalance(1000.0); // Set balance
+        account.setBalance(1000.54); // Set balance
         
         // Get and print account details
         System.out.println("Account Number: " + account.getAccountNumber());
         System.out.println("Account Type: " + account.getAccountType());
-        System.out.println("Balance: " + account.getBalance()); // Print balance
+        System.out.println("Balance: " + account.getBalance());
     }
 }

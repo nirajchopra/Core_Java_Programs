@@ -8,6 +8,12 @@ public class TestBusinessman {
 		Richman r = new Businessman();
 		
 		SocialWorker s = new Businessman();
+		
+		r.donation();
+		r.earnMoney();
+		r.party();
+		s.helpToOthers();
+	
 	}
 
 }

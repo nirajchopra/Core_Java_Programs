@@ -8,6 +8,7 @@ public class Person {
 	private String address;
 	public static final int AVG_AGE = 40;
 	
+	
 	public String getName() {
 		return name;
 	}

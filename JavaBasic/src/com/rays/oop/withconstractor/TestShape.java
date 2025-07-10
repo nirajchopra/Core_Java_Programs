@@ -12,8 +12,8 @@ public class TestShape {
 
 		s[2] = new Triangle(10, 20);
 
-		Rectangle r = (Rectangle) s[0];
-		r.setLength(50);
+//		Rectangle r = (Rectangle) s[0];
+//		r.setLength(50);
 
 		for (int i = 0; i < s.length; i++) {
 

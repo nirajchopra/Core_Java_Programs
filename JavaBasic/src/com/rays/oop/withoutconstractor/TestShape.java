@@ -24,7 +24,6 @@ public class TestShape {
 		t.setHeight(20);
 
 		for (int i = 0; i < s.length; i++) {
-
 			s[i].area();
 
 		}

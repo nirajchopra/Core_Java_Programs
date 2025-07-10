@@ -1,42 +1,29 @@
 package com.rays;
 
 import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
 import java.util.Date;
 
 public class Calender {
-	private static final String DATE = null;
 
-	public static void main(String[] args) throws ParseException {
-		String s = "28/03/2024";
-		SimpleDateFormat sdf = new SimpleDateFormat();
-		Date d = sdf.parse(s);
-		Calender cal = Calender.getInstance();
-		cal.seetTime(d);
-		for(int i=1; i<=12; i++) {
-			cal.add(Calender.DATE, 30);
-			System.out.println(sdf.format(cal.getTime()));
-		}
-		
-	}
+    public static void main(String[] args) throws ParseException {
+        String s = "28/03/2024";
 
-	private static Calender getInstance() {
-		// TODO Auto-generated method stub
-		return null;
-	}
+        // Create SimpleDateFormat with pattern
+        SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
 
-	private void seetTime(Date d) {
-		// TODO Auto-generated method stub
-		
-	}
+        // Parse the date string
+        Date d = sdf.parse(s);
 
-	private Date getTime() {
-		// TODO Auto-generated method stub
-		return null;
-	}
+        // Get Calendar instance and set the parsed date
+        Calendar cal = Calendar.getInstance();
+        cal.setTime(d);
 
-	private void add(String date2, int i) {
-		// TODO Auto-generated method stub
-		
-	}
-
+        // Add 30 days 1s2 times and print each result
+        for (int i = 1; i <= 12; i++) {
+            cal.add(Calendar.DATE, 30);
+            System.out.println(sdf.format(cal.getTime()));
+        }
+    }
 }
