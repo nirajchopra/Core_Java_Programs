@@ -6,7 +6,6 @@ public class DeepCloneAccountCustomer {
 		Account a = new Account(100);
 		Customer c1 = new Customer("abc", a);
 		Customer c2 = (Customer)c1.clone();
-		
 		c2.name = "xyz";
 		c2.account.balance = 200;
 		System.out.println(c1.name);

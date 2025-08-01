@@ -5,7 +5,6 @@ public class TestImmutable {
 		
 		Immutable m = new Immutable("Niraj");
 		
-		m.setName("Niraj");
 		System.out.println(m.getName());
 		
 	}

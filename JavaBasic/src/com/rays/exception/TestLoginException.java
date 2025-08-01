@@ -6,7 +6,7 @@ public class TestLoginException {
 		
 		System.out.println("Before");
 		
-		String name = "admi";
+		String name = "admin";
 		
 		try {
 			if (name.equals("admin")) {

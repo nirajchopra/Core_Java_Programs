@@ -2,38 +2,29 @@ package com.rays.exception;
 
 public class Account {
 
-	private int balance;
+	private double balance;
 
-	public int getBalance() {
+	public double getBalance() {
 		return balance;
 	}
 
-	public void setBalance(int balance) {
+	public void setBalance(double balance) {
 		this.balance = balance;
 	}
 
-	public void deposite(int amount) {
-
-		balance += amount;
-
-		System.out.println("balance after deposite: " + balance);
-
+	// Deposit method
+	public void deposit(double amount) {
+		balance = balance + amount;
+		System.out.println("Deposited: " + amount);
 	}
 
-	public void withdrawl(int amount) throws InsufficientBalance {
-
-		if ((balance - amount) >= 2000) {
-
-			balance -= amount;
-
-			System.out.println("balance after withdrawl: " + balance);
-
-		} else {
-
-			InsufficientBalance e = new InsufficientBalance();
-
+	// Withdraw method
+	public void withdraw(double amount) throws InsufficientBalance {
+		if ((balance - amount) < 2000) {
+			InsufficientBalance e = new InsufficientBalance("Amount is less than 2000... !!!!!");
 			throw e;
-
+		} else {
+			balance = balance - amount;
 		}
 	}
 }
