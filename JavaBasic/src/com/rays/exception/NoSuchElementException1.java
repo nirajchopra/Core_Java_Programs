@@ -14,7 +14,8 @@ public class NoSuchElementException1 {
 		while(it.hasNext()) {
 			System.out.println(it.next());
 		}
-		//Attempt to access next element when hone exists
+//      Agar ab mai koi list add kar raha hu to exception dega (NoSuchElementException)
+//      Kyuki ab koi item nahi hai add karne ko 
 		try {
 			System.out.println(it.next());
 		} catch (NoSuchElementException e) {

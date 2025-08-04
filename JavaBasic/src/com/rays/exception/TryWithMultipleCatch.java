@@ -9,23 +9,19 @@ public class TryWithMultipleCatch {
 		String name = null;
 
 		try {
-
 			int c = a / b;
-
 			System.out.println("Division: " + c);
 			System.out.println(name.length());
 
 		} catch (ArithmeticException e) {
-
 			System.out.println(e);
-//			System.out.println(e.getMessage());
-//			e.printStackTrace();
 
 		} catch (NullPointerException e) {
 			System.out.println(e);
-//			System.out.println(e.getMessage());
-//			e.printStackTrace();
+			System.exit(0);
 
+		} finally {
+			System.out.println("Finally");
 		}
 	}
 

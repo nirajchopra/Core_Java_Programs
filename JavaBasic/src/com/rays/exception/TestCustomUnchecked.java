@@ -7,7 +7,7 @@ public class TestCustomUnchecked {
 		try {
 			dad();
 		} catch (Exception e) {
-			System.out.println("Exception: " + e);
+			System.out.println("Exception: " + e.getMessage());
 		}
 		
 	}

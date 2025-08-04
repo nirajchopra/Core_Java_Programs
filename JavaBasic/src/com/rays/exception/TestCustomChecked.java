@@ -6,7 +6,8 @@ public class TestCustomChecked {
 		try {
 			dad();
 		} catch (CustomChecked e) {
-			
+//			System.out.println(e);
+//			e.printStackTrace();
 			System.out.println("Exception: " + e.getMessage());
 		}
 	}

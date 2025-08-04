@@ -11,6 +11,7 @@ public class TryWithMultiCatchFinally {
 		} catch (NullPointerException e) {
 			// TODO: handle exception
 			System.out.println(e);
+//			System.exit(0);
 		} catch (StringIndexOutOfBoundsException s) {
 			// TODO: handle exception
 			System.out.println(s);
