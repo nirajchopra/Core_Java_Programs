@@ -20,8 +20,8 @@ public class Account {
 
 	// Withdraw method
 	public void withdraw(double amount) throws InsufficientBalance {
-		if ((balance - amount) < 2000) {
-			InsufficientBalance e = new InsufficientBalance("Amount is less than 2000... !!!!!");
+		if ((balance - amount) < 1000) {
+			InsufficientBalance e = new InsufficientBalance("Amount is less than 1000... !!!!!");
 			throw e;
 		} else {
 			balance = balance - amount;

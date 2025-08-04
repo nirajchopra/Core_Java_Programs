@@ -16,7 +16,7 @@ public class TestPersonByInterface implements PersonByInterface{
 		TestPersonByInterface p = new TestPersonByInterface();
 		SimpleDateFormat sdf = new SimpleDateFormat();
 		
-		String a = p.Aa(name, age, sdf.parse("13-12-2002"));
+		String s = p.Aa(name, age, "13-12-2002");
 		System.out.println(s);
 		
 	}
