@@ -1,6 +1,6 @@
 package com.rays.collection.comparator;
 
-public class Employee implements Comparable<Employee> {
+public class Employee  {
 	
 	private int id;
 	private String name;
@@ -28,12 +28,6 @@ public class Employee implements Comparable<Employee> {
 		return salary;
 	}
 
-
-	@Override
-	public int compareTo(Employee o) {
-		
-		return this.salary-o.salary;
-	}
 	
 	public String toString() {
 		return id + " " + name + " " + salary;
