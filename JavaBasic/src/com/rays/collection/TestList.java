@@ -10,7 +10,7 @@ public class TestList {
         List c = new ArrayList();
 
         // Elements add kiye list me (characters)
-        c.add('a');
+        c.add("a");
         c.add('b');
         c.add('c');
         c.add('d');
@@ -22,8 +22,6 @@ public class TestList {
         // Index 2 par ek new element " one" add kiya (baaki elements shift ho jaate hain)
         c.add(2, " one"); // ab list banegi: [a, b,  one, c, d, e]
 
-        //  GALTI: c.add(2) is wrong — add() method ek parameter leta hai ya phir (index, element)
-        // YEH LINE HATA DO YA COMMENT KAR DO
         // System.out.println("List : " + c.add(2));  //  invalid: yeh runtime error dega
 
         // Index 2 ka element print kiya (jo ab " one" hai)

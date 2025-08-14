@@ -17,4 +17,3 @@ public class MultiException {
 	}
 
 }
-t4

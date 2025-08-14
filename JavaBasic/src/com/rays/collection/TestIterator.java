@@ -19,6 +19,8 @@ public class TestIterator {
 
         // Pura list print kiya
         System.out.println(list); // Output: [100, one, two, three]
+        
+        System.out.println("====================================================");
 
         // ================================
         // 1️ Traditional For Loop se list ke elements access kiye
@@ -27,9 +29,17 @@ public class TestIterator {
         }
 
         System.out.println("====================================================");
+        
+     // 2 Reverse for loop — last element se start karke 0 tak chalega
+        for (int i = list.size() - 1; i >= 0; i--) {
+            System.out.println(list.get(i));
+        }
+        
+        System.out.println("====================================================");
 
+        
         // ================================
-        // 2️ Enhanced For-Each Loop ka use kiya
+        // 3 Enhanced For-Each Loop ka use kiya
         for(Object obj : list) {
             System.out.println(obj);
         }
@@ -37,7 +47,7 @@ public class TestIterator {
         System.out.println("====================================================");
 
         // ================================
-        // 3️ Iterator ka use karke elements access kiye
+        // 4 Iterator ka use karke elements access kiye
         Iterator it = list.iterator();  // Iterator object liya list ke liye
 
         // Jab tak list me next element hai, tab tak loop chalega

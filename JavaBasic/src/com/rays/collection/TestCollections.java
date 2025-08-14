@@ -34,9 +34,4 @@ public class TestCollections {
             System.out.println(s);
         }
     }
-
-    //  Ye method unused hai — abhi kuch kaam nahi kar raha
-    public static void shuffle(List<String> e) {
-        // TODO: method implementation baad me add karna
-    }
 }

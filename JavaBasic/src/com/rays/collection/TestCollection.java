@@ -42,7 +42,7 @@ public class TestCollection {
         System.out.println("c1 clear : " + c1); // []
 
         //  contains() — check kiya ki element 1 hai ya nahi
-        System.out.println("c1 contains 1? : " + c1.contains(1)); // false
+        System.out.println("c2 contains 'a'? : " + c2.contains('a')); // false
 
         //  containsAll() — check kiya ki c1 me c2 ke sabhi elements hai ya nahi
         System.out.println("c1 containsAll c2? : " + c1.containsAll(c2)); // false
