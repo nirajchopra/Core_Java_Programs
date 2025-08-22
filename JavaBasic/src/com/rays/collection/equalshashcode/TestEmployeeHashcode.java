@@ -4,23 +4,41 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class TestEmployeeHashcode {
-	
-	public static void main(String[] args) {
-		
-		//  Do employees banaye — values same, reference different
-		Employee e1 = new Employee(1, "Niraj", 900);
-		Employee e2 = new Employee(1, "Niraj", 900);
+    
+    public static void main(String[] args) {
+        
+        // ---------------------------------------
+        // Do employees banaye â€” data same, object reference alag
+        // ---------------------------------------
+        Employee e1 = new Employee(1, "Niraj", 900);
+        Employee e2 = new Employee(1, "Niraj", 900);
 
-		//  HashMap banayi jisme Employee object key hai
-		Map map = new HashMap();
+        // ---------------------------------------
+        // HashMap banayi, jisme Employee object ko key bana rahe hain
+        // ---------------------------------------
+        Map map = new HashMap();
 
-		//  Pehle e1 add kiya as key
-		map.put(e1, "one");
+        // ---------------------------------------
+        // Pehle e1 ko key ke roop me add kiya
+        // Key = e1, Value = "one"
+        // ---------------------------------------
+        map.put(e1, "one");
 
-		//  Fir e2 add kiya as key — ideally should replace e1's value
-		map.put(e2, "two");
+        // ---------------------------------------
+        // Fir e2 ko key ke roop me add kiya
+        // Agar equals() & hashCode() properly override kiye hote
+        // to e1 aur e2 ko "same key" maana jata
+        // aur "one" ki jagah "two" update ho jata
+        // ---------------------------------------
+        map.put(e2, "two");
 
-		//  Print the map — expected: sirf ek entry hona chahiye (key same hai)
-		System.out.println(map);
-	}
+        // ---------------------------------------
+        // Map print karenge
+        // Case 1: Agar equals() & hashCode() sahi likhe â†’ sirf 1 entry
+        //         Output: {1 Niraj 900=two}
+        // Case 2: Agar galat likhe (jaise abhi name == e.name) â†’ 2 alag entry
+        //         Output: {1 Niraj 900=one, 1 Niraj 900=two}
+        // ---------------------------------------
+        System.out.println(map);
+    }
 }

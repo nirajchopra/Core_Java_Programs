@@ -19,7 +19,7 @@ public class TestMap {
         // Pura map print kiya
         System.out.println(map);
 
-        // Key 1 ko remove kiya map se
+        // Key 1 ko remove kiya map se	
         map.remove(1);
         System.out.println(map);
 

@@ -12,12 +12,12 @@ public class MapIterator {
 		m.put(3, "three");
 		m.put(200, "twoHundred");
 		m.put(4, "null");
-		m.put(4, "susnull");
+ 		m.put(4, "susnull");
 		
 		for(Object o : m.entrySet()) {
 			System.out.println(o);
 		}
-		
+		 
 		for(Object o : m.values()) {
 			System.out.println(o);
 		}

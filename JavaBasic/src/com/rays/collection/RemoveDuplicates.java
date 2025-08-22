@@ -26,6 +26,9 @@ public class RemoveDuplicates {
 
         // Original list print ki (jisme duplicate values hain)
         System.out.println("Original List: " + list);
+        
+        // Duplicates remove hone ke baad new list print ki
+        System.out.println("List after removing duplicates: " + uniqueSet);
 
         // Duplicates remove hone ke baad new list print ki
         System.out.println("List after removing duplicates: " + listWithoutDuplicates);
