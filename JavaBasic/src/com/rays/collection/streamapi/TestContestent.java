@@ -43,8 +43,8 @@ public class TestContestent {
 				return e.stream();
 			}))
 			
-			//   Sirf 3 random phone numbers pick karo
-			.limit(3)
+			//   Sirf 4 random phone numbers pick karega
+			.limit(4)
 			
 			//   Har selected phone number ko print karo
 			.forEach(e -> {

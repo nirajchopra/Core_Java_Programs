@@ -4,6 +4,7 @@ encoding//src/com/rays/collection/DequeInterface.java=UTF-8
 encoding//src/com/rays/collection/QueueInterface.java=UTF-8
 encoding//src/com/rays/collection/SetInterface.java=UTF-8
 encoding//src/com/rays/collection/TestIterator.java=UTF-8
+encoding//src/com/rays/collection/TestSortedSet.java=UTF-8
 encoding//src/com/rays/collection/comparator/OrderByIdDesc.java=UTF-8
 encoding//src/com/rays/collection/equalshashcode/TestEmployeeEquals.java=UTF-8
 encoding//src/com/rays/collection/equalshashcode/TestEmployeeHashcode.java=UTF-8

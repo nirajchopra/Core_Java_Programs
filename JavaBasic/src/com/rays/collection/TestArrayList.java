@@ -28,13 +28,13 @@ public class TestArrayList {
 
         //  Sublist nikali from index 1 to 3 (3 exclusive)
         ArrayList subList = new ArrayList(l.subList(1, 3));
-        System.out.println("SubList (index 1 to 2): " + subList);
+        System.out.println("SubList (index 1 to 3): " + subList);
 
         //  For-each loop se sorted list print ki
         System.out.println("Iterating over sorted list:");
         for (Object obj : l) {
-            String str = (String) obj;
-            System.out.println(str);
+//            String str = (String) obj;
+            System.out.println(obj);
         }
     }
 }

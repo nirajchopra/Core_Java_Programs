@@ -24,7 +24,7 @@ public class TestFailSafe {
 
 		//  Lekin Enumeration ke through safely iterate kiya
 		while (e.hasMoreElements()) {
-			System.out.println(e.nextElement());
+			System.out.print(" " + e.nextElement());
 		}
 	}
 }
