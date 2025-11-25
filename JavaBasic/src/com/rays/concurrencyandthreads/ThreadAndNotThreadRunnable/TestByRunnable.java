@@ -2,15 +2,18 @@ package com.rays.concurrencyandthreads.ThreadAndNotThreadRunnable;
 
 public class TestByRunnable {
 
-    public static void main(String[] args) {
+   public static void main(String[] args) {
 
-        // Runnable object banaya (NOT a thread)
-        ByRunnable r1 = new ByRunnable("abc");
-        ByRunnable r2 = new ByRunnable("xyz");
-
-        // Runnable ko Thread ke constructor me pass kiya
-        Thread t1 = new Thread(r1); 
-        Thread t2 = new Thread(r2);
+//        // Runnable object banaya (NOT a thread)
+//        ByRunnable r1 = new ByRunnable("abc");
+//        ByRunnable r2 = new ByRunnable("xyz");
+//
+//        // Runnable ko Thread ke constructor me pass kiya
+//        Thread t1 = new Thread(r1); 
+//        Thread t2 = new Thread(r2);
+    	
+    	Thread t1 = new Thread(new ByRunnable("abc"));
+    	Thread t2 = new Thread(new ByRunnable("xyz"));
 
         // Ab Thread class ka start() method call hoga
         t1.start(); 
