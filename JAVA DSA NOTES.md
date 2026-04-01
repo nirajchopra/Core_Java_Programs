@@ -1,6 +1,3 @@
-Here is the complete set of notes converted into a highly structured, attractive, and study-friendly Markdown format. I have preserved every single detail, definition, and example from your text while enhancing the visual hierarchy.
-
-***
 
 # ☕ Java DSA: Comprehensive Study Notes
 
