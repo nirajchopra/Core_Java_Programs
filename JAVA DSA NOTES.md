@@ -29,13 +29,14 @@ Computers work at a very minute level and only understand **0's and 1's (Binary 
 
 ### 🛠 Types of Programming Languages
 1.  **Procedural Programming**
-    *   Series of well-structured steps and procedures.
-    *   Systematic order of statements, functions, and commands.
+    *   Series of well-structured steps and procedures to compose a program.
+    *   Contains a Systematic order of statements, functions, and commands to complete a task.
     *   **Focus:** *How* to perform the task.
 2.  **Functional Programming**
     *   Written using pure functions.
     *   Variables are never modified; new ones are created as output.
-    *   Used for heavy operations on the same data set (e.g., Machine Learning).
+    *   Used when we have tto perform lots of different operations on the same set of data.
+    *   Used in Machine Learning.
 3.  **Object Oriented Programming (OOP)**
     *   Revolves around **Objects**.
     *   `Code + Data = Object`
@@ -72,16 +73,19 @@ Computers work at a very minute level and only understand **0's and 1's (Binary 
 ## 📐 Program Flow & Logic
 
 ### 📊 Flowchart Symbols
-*   **Oval:** Start / Stop
-*   **Parallelogram:** Input / Output
-*   **Rectangle:** Processing (Addition, subtraction, etc.)
-*   **Diamond:** Condition (Decision making)
-*   **Arrow / Line:** Flow Direction
+*   **Oval:** Start / Stop (Represents start or end point of program)
+*   **Parallelogram:** Input / Output (Represents input and output)
+*   **Rectangle:** Processing (Represents a processing like Addition, subtraction, etc.)
+*   **Diamond:** Condition (Represents Condtional statement **OR** Decision making)
+*   **Arrow / Line:** Flow Direction (A line connector which shows what is the flow of program)
 
 **Example Logic:** `Take name` $\rightarrow$ `Output: Hello Name!`
 `Start` $\rightarrow$ `Input Name` $\rightarrow$ `Output: Hello Name!` $\rightarrow$ `Stop`
 
 ### 📝 Pseudo Code
+* It is just a way to write steps which is human readable format.
+* It is not a code.
+* It is mainly meant for human reading, not for machine reading.
 Human-readable steps, not machine-executable code.
 **Example:**
 1. Start
@@ -92,16 +96,27 @@ Human-readable steps, not machine-executable code.
 ---
 
 ## ☕ Java Architecture
+**Introduction to Java**
+* How Java code executes
+* More information about platform independent
 
 ### ⚙️ Execution Flow
 `.java file` (Human readable) $\rightarrow$ **Compiler** $\rightarrow$ `.class file` (Byte Code) $\rightarrow$ **JVM** (Interpreter) $\rightarrow$ **Machine Code** (0's & 1's)
 
 > **PLATFORM INDEPENDENCE:** Byte code can run on any OS. Therefore, Java is platform-independent. However, the **JVM is platform-dependent** (built specifically for each OS).
+> Byte code does not run directly on system
+> For this we need JVM
+> *Therefore* Java is platform Independent
+> We can provide this byte code to any system
+> That means ew can compile Java code on any system
+> But JVM is platform dependent
+> JVM is built for every OS
+> Executable file that we get has step by step set of instructions dependent on platform.
 
 ### 🏗 JDK vs JRE vs JVM vs JIT
 *   **JDK (Java Development Kit):** Full environment to develop and run programs. Contains development tools.
 *   **JRE (Java Runtime Environment):** Environment to **only run** programs.
-*   **JVM (Java Virtual Machine):** Executes byte code.
+*   **JVM (Java Virtual Machine):** Executes byte code and platform independent.
 *   **JIT (Just In Time):** Part of JVM. For repeated methods, it provides direct machine code to avoid re-interpretation, making execution faster.
 
 **Inside JVM:**
@@ -112,6 +127,52 @@ Human-readable steps, not machine-executable code.
     2. *Linking:* Verifies file, allocates memory, replaces symbolic references.
     3. *Initialization:* Assigns static variables.
 
+**JDK Contains**
+* Development Tools
+* User interface toolkits
+* Integeration libraries
+* Base libraries
+* javac(Java complier)
+* javadoc (documentation generator)
+* Interpreter
+* Loader etc.
+
+**Compile Time**
+`.java file` $\rightarrow$ `javac (Java Coompiler)` $\rightarrow$ `.class file(Byte Code)`
+
+**Runtime**
+Class Loader $\rightarrow$ Byte Code Verifier $\rightarrow$ JVM`Java Interpreter and JIT` $\rightarrow$ Runtime System $\rightarrow$ Hardware
+
+**Java Class Libraries**
+* Used by class loader
+
+**JVM Execution**
+* Java Interpreter
+* Line by line execution
+* When one method is called many times, it will interpret again and again.
+
+**JIT (Just In Time)**
+* For methods that are repeated
+* JIT provides direct machine code
+* Re-interpretation is not required
+* Makes execution faster
+
+** Garbage Collection**
+* Removes unused objects from heap memory
+
+**Class Loader**
+*Loading*
+* Reads `.class` file
+* Generates binary data
+* Objects of this class is created in heap
+
+**Linking**
+* JVM verifies `.class` file
+* Allocates memory for class variables and default values
+* Replaces symbolic references with direct references.
+
+**Initialization**
+* All static variables are assigned with their values defined in code and static block.
 ---
 
 ## 💻 Java Basics & Syntax
@@ -128,6 +189,7 @@ public class Demo {
 *   `void`: Method returns no value.
 *   `String[] args`: Array of characters passed to the main function.
 *   **Compilation Tip:** Use `javac -d <path> Demo.java` to change output location.
+*   It is good practice to use first character as capital, but small is also allowed.s
 
 **Rules:**
 *   Class name and file name should be the same. (If different, the class must not be `public`).
@@ -143,9 +205,12 @@ public class Demo {
 *   `int` (4 bytes)
 *   `char` (Single quotes `'R'`)
 *   `float` (4 bytes, requires `f` suffix: `7.2f`)
-*   `double` (8 bytes, default for decimals)
+*   `double` (8 bytes, default for decimals suffix: `456789.2345`)
 *   `long` (8 bytes, requires `L` suffix: `1234L`)
 *   `boolean` (`true`/`false`)
+
+*String is written in double quotes*
+*char is written is single quotes*
 
 **Other Concepts:**
 *   **Wrapper Class:** `Integer` (converts primitive to object).
