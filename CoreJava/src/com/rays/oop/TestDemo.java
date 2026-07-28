@@ -10,6 +10,7 @@ class Test1 extends Object{
 	}
 	
 	Test1(int x, int y){
+		this();
 		this.x=x;
 		this.y=y;
 	}
@@ -19,12 +20,13 @@ class Test2 extends Test1{
 	int a, b;
 	
 	public Test2() {
-		super();
+		super(9,99);
 		a=300;
 		b=400;
 	}
 	
 	Test2(int a, int b){
+		this();
 		this.a=a;
 		this.b=b;
 	}
@@ -39,7 +41,7 @@ class Test2 extends Test1{
 
 public class TestDemo{
 	public static void main(String[] args) {
-		Test2 t2 = new Test2();
+		Test2 t2 = new Test2(9,99);
 		t2.disp();
 	}
 }
