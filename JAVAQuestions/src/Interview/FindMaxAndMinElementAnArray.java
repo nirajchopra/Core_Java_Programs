@@ -14,7 +14,7 @@ public class FindMaxAndMinElementAnArray {
 				minNumber = inputNumArray[i];
 			}
 		}
-		System.out.println("Largest number : " + maxNumber + "Smallest Number : " + minNumber);
+		System.out.println("Largest number : " + maxNumber + " " + "Smallest Number : " + minNumber);
 
 	}
 }

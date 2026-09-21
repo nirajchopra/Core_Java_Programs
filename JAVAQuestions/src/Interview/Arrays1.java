@@ -2,6 +2,7 @@ package Interview;
 
 import java.util.HashMap;
 import java.util.Map;
+
 //finding pairs of numbers in the array whose sum is 20.
 public class Arrays1 {
 	public static void main(String args[]) {
