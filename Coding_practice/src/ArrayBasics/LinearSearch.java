@@ -6,7 +6,7 @@ public class LinearSearch {
 		int[] arr = { 1, 8, 2, 8 , 8};
 		int key = 8;
 		
-		System.out.println(liner(arr, key));
+		System.out.println("LinearSearch : " + liner(arr, key));
 
 	}
 	

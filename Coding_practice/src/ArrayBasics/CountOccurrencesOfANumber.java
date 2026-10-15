@@ -15,7 +15,7 @@ public class CountOccurrencesOfANumber {
 			}
 		}
 		
-		System.out.println(count);
+		System.out.println("CountOccurrencesOfANumber : " + count);
 
 	}
 
