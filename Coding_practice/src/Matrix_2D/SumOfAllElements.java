@@ -3,7 +3,8 @@ package Matrix_2D;
 public class SumOfAllElements {
 
 	public static void main(String[] args) {
-		int[][] arr = { { 1, 2 }, { 3, 4 } };
+//		int[][] arr = { { 1, 2 }, { 3, 4 } };
+		int[][] arr = { { 0, 0 }, { 0, 0 } };
 		System.out.println("Sum of All Elements : " + sumOfAllElements(arr));
 	}
 
