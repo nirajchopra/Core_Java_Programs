@@ -5,7 +5,7 @@ public class Append1ToN {
 	public static void main(String[] args) {
 		int n = 12;
 		
-		StringBuffer sb = new StringBuffer(n);
+		StringBuilder sb = new StringBuilder(n);
 		
 		for(int i=1; i<=n; i++) {
 			sb.append(i);

@@ -7,7 +7,7 @@ public class InsertACharacter {
 		int index = 3;
 		char ch = 'l';
 
-		StringBuffer sb = new StringBuffer(s);
+		StringBuilder sb = new StringBuilder(s);
 
 		System.out.println("InsertACharacter : " + sb.insert(index, ch));
 	}

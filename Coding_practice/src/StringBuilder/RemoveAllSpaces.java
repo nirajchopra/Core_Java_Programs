@@ -4,7 +4,7 @@ public class RemoveAllSpaces {
 
 	public static void main(String[] args) {
 		String s = "a b c";
-		StringBuffer sb = new StringBuffer(s);
+		StringBuilder sb = new StringBuilder(s);
 
 		for (int i = 0; i < sb.length(); i++) {
 

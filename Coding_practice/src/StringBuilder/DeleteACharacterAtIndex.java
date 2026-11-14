@@ -6,7 +6,7 @@ public class DeleteACharacterAtIndex {
 		String s = "hello";
 		int index = 1;
 		
-		StringBuffer sb = new StringBuffer(s);
+		StringBuilder sb = new StringBuilder(s);
 		
 		System.out.println("DeleteACharacterAtIndex : " + sb.deleteCharAt(index));
 

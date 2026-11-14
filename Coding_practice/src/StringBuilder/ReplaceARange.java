@@ -7,7 +7,7 @@ public class ReplaceARange {
 		int endIndex = 13;
 		String newStr = "Java";
 
-		StringBuffer sb = new StringBuffer(s);
+		StringBuilder sb = new StringBuilder(s);
 
 		System.out.println("Replace A range : " + sb.replace(startIndex, endIndex, newStr));
 	}
