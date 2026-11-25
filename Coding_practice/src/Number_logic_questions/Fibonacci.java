@@ -10,7 +10,7 @@ public class Fibonacci {
 		int b = 1;
 		int c;
 		System.out.print("Fibonacci : ");
-		for(int i=0; i<=n; i++) {
+		for (int i = 0; i <= n; i++) {
 			c = a + b;
 			System.out.print(a + " ");
 			a = b;
